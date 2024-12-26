@@ -1,0 +1,162 @@
+/* Import Bootstrap for styling */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap');
+
+/* General styles for the body */
+body {
+    background: linear-gradient(to bottom, #ffffff, #f3f4f6); /* Subtle gradient background */
+    font-family: 'Merriweather', serif; /* Classic serif font for body text */
+    color: #2e2e2e; /* Deep gray text color for elegance */
+    margin: 0;
+    padding: 0;
+}
+
+/* Title styling */
+h2 {
+    color: #003366; /* Scholarly dark blue */
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif; /* Sophisticated serif for headings */
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Left column (Controls) styles */
+div[style*="width: '30%'"] {
+    background: linear-gradient(to bottom, #f9fafb, #e9ecef); /* Light gradient for depth */
+    border: 1px solid #d1d5db; /* Subtle border */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Elegant shadow */
+    color: #2e2e2e;
+}
+
+/* Buttons */
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    background: linear-gradient(to right, #003366, #00509e); /* Stylish blue gradient */
+    color: #ffffff; /* White text */
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px); /* Lift effect */
+    background: linear-gradient(to right, #00509e, #007bff); /* Lighter blue on hover */
+}
+
+button#reset-view-button {
+    background: linear-gradient(to right, #800000, #cc0000); /* Red gradient */
+    color: #ffffff;
+}
+
+button#reset-view-button:hover {
+    background: linear-gradient(to right, #cc0000, #e60000); /* Lighter red */
+    transform: translateY(-3px);
+}
+
+/* Inputs and sliders */
+input[type='number'] {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #2e2e2e; /* Dark text */
+    border: 1px solid #d1d5db; /* Subtle border */
+    border-radius: 4px;
+    padding: 8px;
+    margin-left: 5px;
+    width: 70px; /* Fixed width */
+    font-size: 14px; /* Standard font size */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle inset shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type='number']:hover {
+    transform: scale(1.05); /* Slight enlargement */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Highlight shadow */
+}
+
+/* Trace selector checklist */
+.trace-selector {
+    margin-top: 10px;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Soft gradient */
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 15px;
+    color: #2e2e2e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trace-selector label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.trace-selector input {
+    margin-right: 10px;
+    accent-color: #00509e; /* Blue highlight for checkboxes */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.trace-selector label:hover,
+.trace-selector input:hover {
+    background-color: rgba(0, 80, 158, 0.1); /* Subtle blue tint on hover */
+    transform: scale(1.05); /* Slight enlargement for hover effect */
+}
+
+/* Graph container styles */
+div[style*="width: '80%'"] {
+    background: linear-gradient(to bottom, #ffffff, #f9fafb); /* Light gradient */
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow for main container */
+}
+
+/* Graph styling */
+.graph-container {
+    color: #2e2e2e;
+}
+
+.graph-title {
+    color: #003366; /* Matches title color */
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Hover effects for interactive elements */
+div:hover {
+    box-shadow: none; /* Remove highlighting rectangles for all divs */
+}
+
+.graph-container:hover {
+    border-color: #00509e; /* Keep the hover effect only for the graph */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+/* Sliders */
+input[type='range'] {
+    -webkit-appearance: none; /* Remove default styling */
+    background-color: #d1d5db;
+    height: 4px;
+    border-radius: 2px;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type='range']:hover {
+    transform: scale(1.05); /* Slight enlargement */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Highlight shadow */
+}

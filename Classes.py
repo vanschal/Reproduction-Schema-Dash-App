@@ -42,24 +42,24 @@ class VARIABLE:
         return html.Div([
             html.Label(self.label),
             dcc.Slider(
-                id=self.slider_id,
-                min=self.min_value,
-                max=self.max_value,
-                step=self.step,
-                value=self.value,
-                marks=None,
-                tooltip={"placement": "bottom", "always_visible": True}
+                id = self.slider_id,
+                min = self.min_value,
+                max = self.max_value,
+                step = self.step,
+                value = self.value,
+                marks = None,
+                tooltip = {"placement": "bottom", "always_visible": True}
             ),
             dcc.Input(
-                id=self.input_id,
-                type='number',
-                min=self.min_value,
-                max=self.max_value,
-                step=self.step,
-                value=self.value,
-                style={'marginLeft': '2px', 'width': '60px'}
+                id = self.input_id,
+                type = 'number',
+                min = self.min_value,
+                max = self.max_value,
+                step = self.step,
+                value = self.value,
+                style = {'marginLeft': '2px', 'width': '60px'}
             )
-        ], style={'alignItems': 'left'})
+        ], style = {'alignItems': 'left'})
     
 class BUTTON:
   """

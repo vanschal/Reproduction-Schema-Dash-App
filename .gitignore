@@ -1,0 +1,10 @@
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cpython-*
+
+venv/
+.env
+pyvenv.cfg
